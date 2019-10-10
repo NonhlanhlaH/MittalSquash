@@ -1,0 +1,74 @@
+﻿@model MittalSquash.Data.WorkingHour
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WorkingHour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayOfWeek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTimeHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTimeHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTimeMinute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTimeMinute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTimeHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTimeHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTimeMinute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTimeMinute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MittalSquashModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Resources" Relationship="Self.FK_Resource_Resource" FromRole="AspNetUsers" ToRole="Resource" />
+    <NavigationProperty Name="Events" Relationship="MittalSquashModel.FK_Event_AspNetUsers" FromRole="AspNetUser" ToRole="Event" />
+    <NavigationProperty Name="UserProfiles" Relationship="MittalSquashModel.FK_UserProfile_AspNetUsers" FromRole="AspNetUser" ToRole="UserProfile" />
+    <NavigationProperty Name="UserBlacklists" Relationship="MittalSquashModel.FK_UserBlacklist_AspNetUsers" FromRole="AspNetUser" ToRole="UserBlacklist" />
+  </EntityType>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="ResourceId" />
+    </Key>
+    <Property Name="ResourceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="isActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_Resource_Resource" FromRole="Resource" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Events" Relationship="MittalSquashModel.FK_Event_Resource" FromRole="Resource" ToRole="Event" />
+  </EntityType>
+  <Association Name="FK_Resource_Resource">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="Resource" Type="Self.Resource" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resource">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MittalSquashEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="Resources" EntityType="Self.Resource" />
+    <AssociationSet Name="FK_Resource_Resource" Association="Self.FK_Resource_Resource">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Resource" EntitySet="Resources" />
+    </AssociationSet>
+    <EntitySet Name="WorkingHours" EntityType="MittalSquashModel.WorkingHour" />
+    <EntitySet Name="Events" EntityType="MittalSquashModel.Event" />
+    <AssociationSet Name="FK_Event_AspNetUsers" Association="MittalSquashModel.FK_Event_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Event_Resource" Association="MittalSquashModel.FK_Event_Resource">
+      <End Role="Resource" EntitySet="Resources" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <EntitySet Name="UserProfiles" EntityType="MittalSquashModel.UserProfile" />
+    <AssociationSet Name="FK_UserProfile_AspNetUsers" Association="MittalSquashModel.FK_UserProfile_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+    </AssociationSet>
+    <EntitySet Name="UserBlacklists" EntityType="MittalSquashModel.UserBlacklist" />
+    <AssociationSet Name="FK_UserBlacklist_AspNetUsers" Association="MittalSquashModel.FK_UserBlacklist_AspNetUsers">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="UserBlacklist" EntitySet="UserBlacklists" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="WorkingHour">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkDay" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DayOfWeek" Type="Int32" Nullable="false" />
+    <Property Name="StartTimeHour" Type="Int32" />
+    <Property Name="StartTimeMinute" Type="Int32" />
+    <Property Name="EndTimeHour" Type="Int32" />
+    <Property Name="EndTimeMinute" Type="Int32" />
+    <Property Name="isActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EventDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EventTime" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ResourceId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="MittalSquashModel.FK_Event_AspNetUsers" FromRole="Event" ToRole="AspNetUser" />
+    <NavigationProperty Name="Resource" Relationship="MittalSquashModel.FK_Event_Resource" FromRole="Event" ToRole="Resource" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_Event_AspNetUsers">
+    <End Type="MittalSquashModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="MittalSquashModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Event_Resource">
+    <End Type="MittalSquashModel.Resource" Role="Resource" Multiplicity="1" />
+    <End Type="MittalSquashModel.Event" Role="Event" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resource">
+        <PropertyRef Name="ResourceId" />
+      </Principal>
+      <Dependent Role="Event">
+        <PropertyRef Name="ResourceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ProfileId" />
+    </Key>
+    <Property Name="ProfileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="MittalSquashModel.FK_UserProfile_AspNetUsers" FromRole="UserProfile" ToRole="AspNetUser" />
+  </EntityType>
+  <Association Name="FK_UserProfile_AspNetUsers">
+    <End Type="MittalSquashModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="MittalSquashModel.UserProfile" Role="UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="UserBlacklist">
+    <Key>
+      <PropertyRef Name="RegisterId" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RegisterId" Type="Int32" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="AspNetUser" Relationship="MittalSquashModel.FK_UserBlacklist_AspNetUsers" FromRole="UserBlacklist" ToRole="AspNetUser" />
+  </EntityType>
+  <Association Name="FK_UserBlacklist_AspNetUsers">
+    <End Type="MittalSquashModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+    <End Type="MittalSquashModel.UserBlacklist" Role="UserBlacklist" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserBlacklist">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

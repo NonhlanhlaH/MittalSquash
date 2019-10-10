@@ -1,0 +1,59 @@
+﻿@model MittalSquash.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+    <!-- ##### Register Now Start ##### -->
+<section class="register-now section-padding-100-0 d-flex justify-content-between align-items-center" style="background-image: url(img/core-img/texture.png);">
+    <!-- Register Contact Form -->
+    <div class="register-contact-form mb-100">
+        <div class="container-fluid">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Create a new account.</h4>
+                <hr />
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn  clever-btn w-100" value="Register" />
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Register Now Countdown -->
+    <div class="register-now-countdown mb-100">
+        <h3>Register Now</h3>
+        <p>Enter your Email Address and Password to register.</p>
+        <!-- Register Countdown -->
+        <div class="register-countdown">
+            <div class="events-cd d-flex flex-wrap"></div>
+        </div>
+    </div>
+</section>
+<!-- ##### Register Now End ##### -->
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

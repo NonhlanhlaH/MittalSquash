@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b23d098804ef4b2fbc05ffb7fb209dca" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="MittalSquashModel.AspNetUser" Width="1.5" PointX="0.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MittalSquashModel.Resource" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="MittalSquashModel.FK_Resource_Resource" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MittalSquashModel.WorkingHour" Width="1.5" PointX="9.375" PointY="3.125" />
+        <EntityTypeShape EntityType="MittalSquashModel.Event" Width="1.5" PointX="6.875" PointY="1.625" />
+        <AssociationConnector Association="MittalSquashModel.FK_Event_AspNetUsers" />
+        <AssociationConnector Association="MittalSquashModel.FK_Event_Resource" />
+        <EntityTypeShape EntityType="MittalSquashModel.UserProfile" Width="1.5" PointX="3.375" PointY="4.125" />
+        <AssociationConnector Association="MittalSquashModel.FK_UserProfile_AspNetUsers" />
+        <EntityTypeShape EntityType="MittalSquashModel.UserBlacklist" Width="1.5" PointX="6.125" PointY="4.75" />
+        <AssociationConnector Association="MittalSquashModel.FK_UserBlacklist_AspNetUsers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

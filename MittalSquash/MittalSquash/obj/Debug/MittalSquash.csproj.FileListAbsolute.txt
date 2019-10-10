@@ -1,0 +1,249 @@
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\ApplicationInsights.config
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\csc.exe
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\System.Collections.Immutable.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\vbc.exe
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe.config
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\MittalSquash.dll.config
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\MittalSquash.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\MittalSquash.pdb
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Antlr3.Runtime.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\EntityFramework.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Web.Infrastructure.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Newtonsoft.Json.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Owin.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Helpers.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Mvc.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Optimization.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Razor.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\WebGrease.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Helpers.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Mvc.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Optimization.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.Razor.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Antlr3.Runtime.pdb
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Newtonsoft.Json.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\EntityFramework.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csprojResolveAssemblyReference.cache
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\obj\Debug\MittalSquash.dll
+c:\users\luckyr\documents\visual studio 2015\Projects\MittalSquash\MittalSquash\obj\Debug\MittalSquash.pdb
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\ApplicationInsights.config
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\csc.exe
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\vbc.exe
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\MittalSquash.dll.config
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\MittalSquash.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\MittalSquash.pdb
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Antlr3.Runtime.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\EntityFramework.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Newtonsoft.Json.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Owin.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Helpers.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Mvc.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Optimization.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Razor.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\WebGrease.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Helpers.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Mvc.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Optimization.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.Razor.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Antlr3.Runtime.pdb
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Newtonsoft.Json.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\EntityFramework.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csprojAssemblyReference.cache
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csproj.CoreCompileInputs.cache
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csproj.CopyComplete
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\obj\Debug\MittalSquash.dll
+C:\Users\nonhlanhla\Desktop\Project 3\Updated2\MittalSquash\MittalSquash\obj\Debug\MittalSquash.pdb
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\ApplicationInsights.config
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\csc.exe
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\vbc.exe
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\MittalSquash.dll.config
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\MittalSquash.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\MittalSquash.pdb
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Antlr3.Runtime.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\EntityFramework.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Newtonsoft.Json.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Owin.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Helpers.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Mvc.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Optimization.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Razor.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\WebGrease.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.Web.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Helpers.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Mvc.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Optimization.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.Razor.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Antlr3.Runtime.pdb
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Newtonsoft.Json.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\EntityFramework.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\EntityFramework.SqlServer.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csproj.CopyComplete
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\obj\Debug\MittalSquash.dll
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\obj\Debug\MittalSquash.pdb
+C:\Users\Ntombi\Downloads\Spectre_Group#7\MittalSquash\MittalSquash\obj\Debug\MittalSquash.csprojAssemblyReference.cache

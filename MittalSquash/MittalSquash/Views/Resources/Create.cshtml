@@ -1,0 +1,88 @@
+﻿@model MittalSquash.Data.Resource
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area">
+    <!-- Breadcumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Resource</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area blog-page" style="padding-top: 20px">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                    <!-- Blog Content -->
+                    <div class="blog-content">
+                        <a href="#" class="blog-headline">
+                            <h4>Add Resource</h4>
+                            <hr/>
+                        </a>
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                @*<div class="form-group">
+                                    @Html.LabelFor(model => model.CreateDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.EditorFor(model => model.CreateDate, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.CreateDate, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>*@
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.UserId, "UserId", htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.isActive, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-10">
+                                        <div class="checkbox">
+                                            @Html.EditorFor(model => model.isActive)
+                                            @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input type="submit" value="Create" class="btn clever-btn" />
+                                        <a href="#" class="btn clever-btn" onclick="window.location = '@Url.Action("Index", "Resources")'">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->

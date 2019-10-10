@@ -1,0 +1,149 @@
+﻿@model MittalSquash.Models.UserDetails
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .form-control {
+        margin-bottom: 5px
+    }
+</style>
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area">
+    <!-- Breadcumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Profile</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+    <!-- ##### Courses Content Start ##### -->
+<div class="single-course-content" style="padding-top: 20px">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <div class="course--content">
+
+                    <div class="clever-tabs-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Profile Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="true">Change Password</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Tab Text -->
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                            @using (Html.BeginForm("Update", "Profile", FormMethod.Get))
+                            {
+
+                                <div class="clever-description">
+                                    @Html.HiddenFor(m=>m.UserProfile.ProfileId)
+                                    @Html.HiddenFor(m=>m.UserProfile.UserId)
+                                    <!-- About Course -->
+                                    <div class="about-course mb-30">
+
+                                        <div class="row">
+                                            <div class="col-12 col-lg-5"><label>UserId</label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <p>@Model.User.Id</p>
+                                            </div>
+
+
+                                            <div class="col-12 col-lg-5"><label>Username/Email</label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <p>@Model.User.Email</p>
+                                            </div>
+
+                                            <div class="col-12 col-lg-5"><label>First Names</label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <p>@Html.TextBoxFor(m => m.UserProfile.FirstName, new { @class = "form-control" })</p>
+                                            </div>
+
+                                            <div class="col-12 col-lg-5"><label>Last Name</label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <p>@Html.TextBoxFor(m => m.UserProfile.LastName, new { @class = "form-control" })</p>
+                                            </div>
+
+                                            <div class="col-12 col-lg-5"><label>Contact Number </label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <p>@Html.TextBoxFor(m => m.UserProfile.ContactNumber, new { @class = "form-control" })</p>
+                                            </div>
+
+                                            <div class="col-12 col-lg-5"><label></label></div>
+                                            <div class="col-12 col-lg-7">
+                                                <button type="submit" class="btn clever-btn"> Update</button>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+
+                            </div>
+
+                            <!-- Tab Text -->
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                <div class="clever-curriculum">
+
+                                    <!-- About Curriculum -->
+                                    <div class="about-curriculum mb-30">
+                                        <h4>Syllabus</h4>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="course-sidebar">
+                    <!-- Buy Course -->
+                    <a href="~/Booking/Index" class="btn clever-btn mb-30 w-100">Book Now!</a>
+
+                    <!-- Widget -->
+                    <div class="sidebar-widget">
+                        <h4>My Booking Details</h4>
+                        <ul class="features-list">
+                            @foreach (var eventBooking in Model.Bookings.Where(x=>x.EventDate >= DateTime.Now.Date))
+                            {
+                                <li>
+                                    <h6><i class="fa fa-calendar" aria-hidden="true"></i> @eventBooking.EventDate.ToString("D") : @eventBooking.EventTime</h6>
+                                    @*<h6><i class="fa fa-clock-o" aria-hidden="true"></i> 30 minutes</h6>*@
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="course-sidebar">
+                    <!-- Widget -->
+                    <div class="sidebar-widget">
+                        <h4>Booking History</h4>
+                        <ul class="features-list">
+                            @foreach (var eventBooking in Model.Bookings.Where(x=>x.EventDate < DateTime.Now.Date))
+                            {
+                                <li>
+                                    <h6><i class="fa fa-calendar" aria-hidden="true"></i> @eventBooking.EventDate.ToString("D") : @eventBooking.EventTime</h6>
+                                    @*<h6><i class="fa fa-clock-o" aria-hidden="true"></i> 30 minutes</h6>*@
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Courses Content End ##### -->
+

@@ -1,0 +1,103 @@
+﻿@model IEnumerable<MittalSquash.Data.AspNetUser>
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area">
+    <!-- Breadcumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Settings</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area blog-page" style="padding-top: 20px">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                    <img src="img/blog-img/2.jpg" alt="">
+                    <!-- Blog Content -->
+                    <div class="blog-content">
+                        <a href="#" class="blog-headline">
+                            <h4><i class="fa fa-users fa-fw"></i> Current Users</h4>
+                        </a>
+                        <a href="#" class="btn clever-btn pull-right" onclick="window.location = '@Url.Action("Register", "Account")'">Create New User</a>
+                        <br /><br />
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                            
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Email)
+                                        </th>
+
+                                        @*<th>
+            @Html.DisplayNameFor(model => model.PasswordHash)
+        </th>*@
+
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.AccessFailedCount)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.UserName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.UserBlacklists)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+
+                                    @foreach (var item in Model)
+                                    {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+
+                                    @*<td>
+            @Html.DisplayFor(modelItem => item.PasswordHash)
+        </td>*@
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AccessFailedCount)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UserName)
+                                    </td>
+                                    <td>
+                                        @if (item.UserBlacklists.Count() >= 3)
+                                        {
+                                            @Html.ActionLink("BlackList", "unblacklist", new { id = item.Id })
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Details", "Details", new { id = item.Id })
+                                    </td>
+                                </tr>
+                                    }
+
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+
+
+
+

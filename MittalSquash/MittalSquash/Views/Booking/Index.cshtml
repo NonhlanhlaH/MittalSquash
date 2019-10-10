@@ -1,0 +1,211 @@
+﻿@model IEnumerable<MittalSquash.Models.Booking>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .time{
+        align-content: center
+    }
+</style>
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area">
+    <!-- Breadcumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Booking</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+    <!-- ##### Blog Area Start ##### -->
+<section class="blog-area blog-page" style="padding-top: 20px">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area  wow fadeInUp" data-wow-delay="250ms">
+                    @using (Html.BeginForm("Index", "Booking", FormMethod.Get))
+                    {
+                        <div class="blog-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-6 text-right">
+                                            <label>Date</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="input-group date" data-provide="datepicker">
+                                                            @Html.TextBox("Date", ViewBag.CurrentFilter as string, new { @class = "form-control", @data_date_format = "mm/dd/yyyy", @readonly = "readonly" })
+                                                            <div class="input-group-addon" style="padding: 10px; border: 1px solid silver">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td style="padding-left: 30px">
+
+                                                        <button class="btn btn-primary" type="submit">
+                                                            <i class="fa fa-search"></i> SEARCH
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+            {
+                <div class="col-12">
+                    <div class="alert alert-danger">
+                        <a href="#" class="close" data-dismiss="alert">×</a>
+                        <h4>Validation Errors</h4>
+                        @Html.ValidationSummary()
+                    </div>
+                </div>
+            }
+
+
+
+                <!-- Single Blog Area -->
+                <div class="col-12">
+                    <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <!-- Blog Content -->
+                        <div class="blog-content">
+                            <a href="#" class="blog-headline">
+                                <h4 class="pull-right"><i class="fa fa-calendar"></i> @Model.FirstOrDefault().Date.ToString("D")</h4>
+                                <h4>Scheduler</h4>
+                                <hr />
+
+                            </a>
+                            <div class="table-responsive" style="overflow:auto">
+                                <table style="width: 100%">
+                                    <tr>
+                                        @foreach (var modelBooking in Model)
+                                        {
+                                            <td style="padding: 10px">
+                                                <table class="table table-hover" style="width: 100%; margin: 10px">
+                                                    <tr>
+                                                        <th>@modelBooking.Resource.Name </th>
+                                                    </tr>
+                                                    @foreach (var eventBooking in modelBooking.EventBookings)
+                                                    {
+                                                        if (modelBooking.Resource.ResourceId == 0)
+                                                        {
+                                                            <tr>
+                                                                <td class="time" style="height: 45px; padding: 0;">
+                                                                    <b class="time">@eventBooking.Time</b>
+
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                        else
+                                                        {
+                                                            <tr>
+                                                                @if (eventBooking.booked)
+                                                                {
+                                                                    if (eventBooking.isOwner)
+                                                                    {
+                                                                        <td style="min-width: 150px; height: 45px; padding: 0">
+                                                                            <table style="width: 100%">
+                                                                                <tr>
+                                                                                    <td class="bg-success" style="min-width: 10px; height: 45px; padding: 0; background-color: silver">
+                                                                                    </td>
+                                                                                    <td style="min-width: 140px; height: 45px; padding: 10px">
+                                                                                        <i class="fa fa-calendar"> Booked</i>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <td class="bg-warning" style="min-width: 150px; height: 45px; padding: 0; background-color: silver">
+                                                                        </td>
+                                                                    }
+                                                                }
+                                                                else
+                                                                {
+
+                                                                    <td style="min-width: 150px; height: 45px; padding: 0">
+                                                                        <a href="#" role="button" id="userName" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 0">
+                                                                            <div class="col-12" style="height: 40px;">
+
+                                                                            </div>
+                                                                        </a>
+                                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userName">
+                                                                            @using (Html.BeginForm("SaveEvent", "Booking"))
+                                                                            {
+                                                                                <input type="text" value="@modelBooking.Resource.ResourceId" class="form-control" style="display: none" name="Resource" id="Resource">
+                                                                                <input style="display: none" type="text" value="@modelBooking.Date.ToShortDateString()" class="form-control" name="Date" id="Date">
+                                                                                <input style="display: none" type="text" value="@eventBooking.Time" class="form-control" name="Time" id="Time">
+
+
+
+                                                                                <table class="table-borderless" style="padding: 20px">
+                                                                                    <tr>
+                                                                                        <td> Date</td>
+                                                                                        <td>
+                                                                                            <i class="fa fa-calendar-plus-o"></i> @modelBooking.Date.ToShortDateString()
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td> Time</td>
+                                                                                        <td>
+                                                                                            <i class="fa fa-clock-o"></i> @eventBooking.Time
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2"><button id="book" type="submit" class="btn clever-btn">BOOK</button></td>
+                                                                                    </tr>
+
+                                                                                </table>
+                                                                            }
+                                                                        </div>
+
+                                                                    </td>
+                                                                }
+
+
+                                                            </tr>
+                                                        }
+                                                    }
+                                                </table>
+                                            </td>
+                                        }
+
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+</section>
+
+
+<script type="text/javascript">
+
+    $('.datepicker').datepicker({
+        format: 'yyyy/MM/dd',
+        startDate: '-3d'
+    });
+
+
+</script>

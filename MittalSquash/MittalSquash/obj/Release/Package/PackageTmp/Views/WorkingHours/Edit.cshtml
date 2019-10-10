@@ -1,0 +1,134 @@
+﻿@model MittalSquash.Data.WorkingHour
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb-area">
+    <!-- Breadcumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Settings</a></li>
+        </ol>
+    </nav>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
+<!-- ##### Blog Area Start ##### -->
+<section class="blog-area blog-page" style="padding-top: 20px">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Single Blog Area -->
+            <div class="col-12">
+                <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="500ms">
+                    <img src="img/blog-img/2.jpg" alt="">
+                    <!-- Blog Content -->
+                    <div class="blog-content">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <a href="#" class="blog-headline">
+                                    <h4>Working Hours</h4>
+                                    <hr/>
+                                </a>
+                            
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                    <div class="form-horizontal">
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                        @Html.HiddenFor(model => model.ID)
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.WorkDay, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.WorkDay, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                @Html.ValidationMessageFor(model => model.WorkDay, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.DayOfWeek, htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.EditorFor(model => model.DayOfWeek, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                @Html.ValidationMessageFor(model => model.DayOfWeek, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Start Time</label>
+                                            <div class="col-md-10">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            @Html.EditorFor(model => model.StartTimeHour, new {htmlAttributes = new {@class = "form-control"}})
+                                                            @Html.ValidationMessageFor(model => model.StartTimeHour, "", new {@class = "text-danger"})
+                                                        </td>
+                                                        <td>
+                                                            @Html.EditorFor(model => model.StartTimeMinute, new {htmlAttributes = new {@class = "form-control"}})
+                                                            @Html.ValidationMessageFor(model => model.StartTimeMinute, "", new {@class = "text-danger"})
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                   
+
+                                        <div class="form-group">
+                                            <label>End Time</label>
+                                            <div class="col-md-10">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            @Html.EditorFor(model => model.EndTimeHour, new {htmlAttributes = new {@class = "form-control"}})
+                                                            @Html.ValidationMessageFor(model => model.EndTimeHour, "", new {@class = "text-danger"})
+                                                        </td>
+                                                        <td>
+                                                            @Html.EditorFor(model => model.EndTimeMinute, new {htmlAttributes = new {@class = "form-control"}})
+                                                            @Html.ValidationMessageFor(model => model.EndTimeMinute, "", new {@class = "text-danger"})
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                 
+
+                                        <div class="form-group">
+                                            <label>Active</label>
+                                            <div class="col-md-10">
+                                                <div class="checkbox">
+                                                    @Html.EditorFor(model => model.isActive)
+                                                    @Html.ValidationMessageFor(model => model.isActive, "", new { @class = "text-danger",disabled = "disabled" })
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-offset-2 col-md-10">
+                                                <input type="submit" value="Save" class="btn clever-btn" />
+                                                <a href="#" class="btn clever-btn" onclick="window.location = '@Url.Action("Index", "WorkingHours")'">Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                       
+
+                            </div>
+                        </div>
+
+            
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ##### Blog Area End ##### -->
+
+

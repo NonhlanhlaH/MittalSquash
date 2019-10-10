@@ -1,0 +1,80 @@
+﻿@model MittalSquash.Data.WorkingHour
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WorkingHour</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayOfWeek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTimeHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTimeHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTimeMinute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTimeMinute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTimeHour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTimeHour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTimeMinute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTimeMinute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isActive)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
